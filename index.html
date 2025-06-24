@@ -8,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/about.css">
   <script src="localeStorageService.js" defer></script>
   <script src="script.js" defer></script>
 </head>
@@ -21,9 +22,6 @@
   </div>
   <nav class="nav">
     <ul class="list">
-      <li class="list__item">
-        <a href="#about" class="anchor-link">About me</a>
-      </li>
       <li class="list__item">
         <a href="#hard-skills" class="anchor-link">Hard skills</a>
       </li>
@@ -43,7 +41,31 @@
   </nav>
 </header>
 <main class="main">
-
+  <section class="about-me">
+    <a class="about-me__social"
+       href="https://www.linkedin.com/in/karina-serdyuk-4a7722255/"
+       target="_blank"
+       style="top: 2rem; left: 6rem"
+    >
+      <img src="./assets/svg/linkedin_icon.svg" alt="LinkedIn">
+    </a>
+    <a class="about-me__social"
+       href="https://github.com/Karina2409"
+       target="_blank"
+       style="top: 6rem; right: 4rem"
+    >
+      <img src="./assets/svg/github-icon.svg" alt="GitHub">
+    </a>
+    <div class="about-me__photo-container">
+      <img src="./assets/images/my-photo.JPG" alt="Karina" class="about-me__photo">
+    </div>
+    <div class="about-me__name">
+      Karina Siardziuk
+    </div>
+    <div class="about-me__job">
+      Junior Front-End Developer
+    </div>
+  </section>
 </main>
 </body>
 </html>

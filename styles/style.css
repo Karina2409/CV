@@ -1,11 +1,17 @@
 :root {
   --bg-color: antiquewhite;
   --text-color: #120d00;
+  --photo-before-color: #679cff;
+  --photo-after-color: #ffc354;
+  --social-color: rgba(147, 84, 255, 0.5);
 }
 
 [data-theme='dark'] {
   --bg-color: #120d00;
   --text-color: antiquewhite;
+  --photo-before-color: #bfd4f8;
+  --photo-after-color: #ffd17d;
+  --social-color: rgba(199, 163, 255, 0.5);
 }
 
 * {
@@ -13,6 +19,7 @@
   margin: 0;
   padding: 0;
   font-family: Montserrat, serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -21,10 +28,13 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 30px;
 }
 
 .header {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
+  min-width: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -79,4 +89,16 @@ body {
   background-color: var(--text-color);
   color: var(--bg-color);
   border-radius: 30px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+  min-width: 0;
+  padding: 0 20px;
 }

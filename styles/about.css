@@ -1,0 +1,69 @@
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.about-me__photo-container {
+  position: relative;
+  width: 265px;
+  height: 265px;
+}
+
+.about-me__photo-container::before,
+.about-me__photo-container::after {
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.about-me__photo-container::before {
+  top: 0;
+  left: 0;
+  transform: translate(8px, 15px);
+  background-color: var(--photo-before-color);
+}
+
+.about-me__photo-container::after {
+  top: 0;
+  left: 0;
+  transform: translate(-8px, -15px);
+  background-color: var(--photo-after-color);
+}
+
+.about-me__photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.about-me__name {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.about-me__job {
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--photo-before-color);
+  text-align: center;
+}
+
+.about-me__social {
+  position: absolute;
+  padding: 5px;
+  background-color: var(--social-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
