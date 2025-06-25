@@ -45,16 +45,16 @@
 }
 
 .about-me__name {
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: 500;
-  color: var(--text-color);
+  color: var(--photo-after-color);
   text-align: center;
 }
 
 .about-me__job {
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: 600;
-  color: var(--photo-before-color);
+  color: var(--text-color);
   text-align: center;
 }
 
@@ -66,4 +66,65 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  box-sizing: content-box;
+  transition: box-shadow 0.3s ease;
+}
+
+.about-me__social:hover {
+  box-shadow: 0 0 0 20px var(--social-color);
+}
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+.btn__download {
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+}
+
+.btn__download span {
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn__download::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: var(--text-color);
+  z-index: 0;
+  transition: width 0.4s ease;
+}
+
+.btn__download:hover::before {
+  width: 100%;
+}
+
+.btn__download:hover span {
+  color: var(--text-color--reverce);
+}
+
+.download-svg {
+  fill: var(--text-color);
+  transition: fill 0.4s ease;
+}
+
+.btn__download:hover .download-svg {
+  fill: var(--text-color--reverce);
 }

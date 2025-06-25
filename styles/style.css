@@ -1,17 +1,18 @@
 :root {
   --bg-color: antiquewhite;
-  --text-color: #120d00;
-  --photo-before-color: #679cff;
+  --text-color: #1d216a;
+  --photo-before-color: #939cff;
   --photo-after-color: #ffc354;
-  --social-color: rgba(147, 84, 255, 0.5);
+  --social-color: rgba(196, 156, 255, 0.5);
+  --text-color--reverce: antiquewhite;
 }
 
 [data-theme='dark'] {
-  --bg-color: #120d00;
+  --bg-color: #191300;
   --text-color: antiquewhite;
-  --photo-before-color: #bfd4f8;
+  --photo-before-color: #939cff;
   --photo-after-color: #ffd17d;
-  --social-color: rgba(199, 163, 255, 0.5);
+  --text-color--reverce: #1d216a;
 }
 
 * {
@@ -54,7 +55,7 @@ body {
 
 .list__item {
   margin: 0 20px;
-  font-size: 22px;
+  font-size: 1.5rem;
   padding: 10px 0;
   color: var(--text-color);
   text-decoration: none;
