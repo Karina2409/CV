@@ -14,7 +14,7 @@ function changeTheme() {
 }
 
 function setButtonThemeText(theme) {
-  const themeButton  = document.querySelector(".theme-button");
+  const themeButton = document.querySelector(".theme-button");
   themeButton.textContent = theme === 'dark' ? 'Light' : 'Dark';
 }
 
@@ -37,4 +37,86 @@ function animateSocial() {
   requestAnimationFrame(animateSocial);
 }
 
+const container = document.querySelector('.soft-skills__container');
+const items = document.querySelectorAll('.soft-skills__item');
+const itemSize = 100;
+const speed = 1;
+
+const balls = [];
+
+items.forEach((el) => {
+  let X, Y;
+  let tries = 0;
+  const maxTries = 100;
+
+  let overlapping;
+
+  do {
+    X = Math.random() * (container.clientWidth - itemSize);
+    Y = Math.random() * (container.clientHeight - itemSize);
+
+    overlapping = balls.some((b) => {
+      const dx = b.x - X;
+      const dy = b.y - Y;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+      return distance < itemSize;
+    });
+
+    tries++;
+  } while (overlapping && tries < maxTries);
+
+  const angle = Math.random() * 2 * Math.PI;
+  const dx = Math.cos(angle) * speed;
+  const dy = Math.sin(angle) * speed;
+
+  el.style.left = `${X}px`;
+  el.style.top = `${Y}px`;
+
+  balls.push({ el, x: X, y: Y, dx, dy });
+})
+
+function detectCollision(a, b) {
+  const dx = a.x - b.x;
+  const dy = a.y - b.y;
+  const distance = Math.sqrt(dx * dx + dy * dy);
+  return distance < itemSize;
+}
+
+function resolveCollision(a, b) {
+  const tempDx = a.dx;
+  const tempDy = a.dy;
+  a.dx = b.dx;
+  a.dy = b.dy;
+  b.dx = tempDx;
+  b.dy = tempDy;
+}
+
+function animateSoftSkills() {
+  balls.forEach((ball) => {
+    ball.x += ball.dx;
+    ball.y += ball.dy;
+    if (ball.x < 0 || ball.x >= container.clientWidth - itemSize) {
+      ball.dx *= -1;
+      ball.x = Math.max(0, Math.min(ball.x, container.clientWidth - itemSize));
+    }
+    if (ball.y <= 0 || ball.y >= container.clientHeight - itemSize) {
+      ball.dy *= -1;
+      ball.y = Math.max(0, Math.min(ball.y, container.clientHeight - itemSize));
+    }
+    ball.el.style.left = `${ball.x}px`;
+    ball.el.style.top = `${ball.y}px`;
+  })
+
+  for (let i = 0; i < balls.length; i++) {
+    for (let j = i + 1; j < balls.length; j++) {
+      if (detectCollision(balls[i], balls[j])) {
+        resolveCollision(balls[i], balls[j]);
+      }
+    }
+  }
+
+  requestAnimationFrame(animateSoftSkills);
+}
+
 animateSocial();
+animateSoftSkills();
