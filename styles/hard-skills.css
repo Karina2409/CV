@@ -12,6 +12,21 @@
   gap: 2px;
 }
 
+.progress__label-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+
+  i {
+    font-size: 30px;
+    color: var(--accent-color);
+  }
+
+  svg {
+    fill: var(--accent-color);
+  }
+}
+
 .progress__label {
   font-size: 1.2rem;
   font-weight: 500;
