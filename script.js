@@ -40,7 +40,7 @@ function animateSocial() {
 const container = document.querySelector('.soft-skills__container');
 const items = document.querySelectorAll('.soft-skills__item');
 const itemSize = 100;
-const speed = 1;
+const speed = 0.5;
 
 const balls = [];
 
