@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/hard-skills.css">
+  <link rel="stylesheet" href="styles/soft-skills.css">
   <script src="localeStorageService.js" defer></script>
   <script src="script.js" defer></script>
 </head>
@@ -43,43 +45,121 @@
 </header>
 <main class="main">
   <section class="about-me">
-    <a class="about-me__social"
-       href="https://www.linkedin.com/in/karina-serdyuk-4a7722255/"
-       target="_blank"
-       style="top: 2rem; left: 6rem"
-    >
-      <img src="./assets/svg/linkedin_icon.svg" alt="LinkedIn">
-    </a>
-    <a class="about-me__social"
-       href="https://github.com/Karina2409"
-       target="_blank"
-       style="top: 6rem; right: 4rem"
-    >
-      <img src="./assets/svg/github-icon.svg" alt="GitHub">
-    </a>
-    <div class="about-me__photo-container">
-      <img src="./assets/images/my-photo.JPG" alt="Karina" class="about-me__photo">
-    </div>
-    <div class="about-me__name">
-      Karina Siardziuk
-    </div>
-    <div class="about-me__job">
-      Junior Front-End Developer
-    </div>
-    <div class="about-me__resume">
-      <a href="" class="btn btn__download">
+    <div class="about-me__main">
+      <a class="about-me__social"
+         href="https://www.linkedin.com/in/karina-serdyuk-4a7722255/"
+         target="_blank"
+         style="top: 2rem; left: 6rem"
+      >
+        <img src="./assets/svg/linkedin_icon.svg" alt="LinkedIn">
+      </a>
+      <a class="about-me__social"
+         href="https://github.com/Karina2409"
+         target="_blank"
+         style="top: 6rem; right: 4rem"
+      >
+        <img src="./assets/svg/github-icon.svg" alt="GitHub">
+      </a>
+      <div class="about-me__photo-container">
+        <img src="./assets/images/my-photo.JPG" alt="Karina" class="about-me__photo">
+      </div>
+      <div class="about-me__name">
+        Karina Siardziuk
+      </div>
+      <div class="about-me__job">
+        Junior Front-End Developer
+      </div>
+      <div class="about-me__resume">
+        <a href="" class="btn btn__download">
         <span>Download CV
-        <svg data-name="Livello 1" id="Livello_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px">
+        <svg data-name="Livello 1" id="Livello_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" width="20px"
+             height="20px">
           <title/>
           <path class="download-svg"
-            d="M61.88,93.12h0a3,3,0,0,0,.44.36l.24.13a1.74,1.74,0,0,0,.59.24l.25.07h0a3,3,0,0,0,1.16,0l.26-.08.3-.09a3,3,0,0,0,.3-.16l.21-.12a3,3,0,0,0,.46-.38L93,66.21A3,3,0,1,0,88.79,62L67,83.76V3a3,3,0,0,0-6,0V83.76L39.21,62A3,3,0,0,0,35,66.21Z"/>
+                d="M61.88,93.12h0a3,3,0,0,0,.44.36l.24.13a1.74,1.74,0,0,0,.59.24l.25.07h0a3,3,0,0,0,1.16,0l.26-.08.3-.09a3,3,0,0,0,.3-.16l.21-.12a3,3,0,0,0,.46-.38L93,66.21A3,3,0,1,0,88.79,62L67,83.76V3a3,3,0,0,0-6,0V83.76L39.21,62A3,3,0,0,0,35,66.21Z"/>
           <path class="download-svg"
-            d="M125,88a3,3,0,0,0-3,3v22a9,9,0,0,1-9,9H15a9,9,0,0,1-9-9V91a3,3,0,0,0-6,0v22a15,15,0,0,0,15,15h98a15,15,0,0,0,15-15V91A3,3,0,0,0,125,88Z"/>
+                d="M125,88a3,3,0,0,0-3,3v22a9,9,0,0,1-9,9H15a9,9,0,0,1-9-9V91a3,3,0,0,0-6,0v22a15,15,0,0,0,15,15h98a15,15,0,0,0,15-15V91A3,3,0,0,0,125,88Z"/>
         </svg>
         </span>
-
-      </a>
+        </a>
+      </div>
     </div>
+    <div class="about-me__info-container">
+      <div class="about-me__info">
+        <p>I'm a third-year student at the BSUIR at the faculty of computer aided design.</p>
+        <p>At the university we studied many programming languages such as: C++, Java, Python, Kotlin, a little CSS and
+          HTML.</p>
+        <p>I finished the JS / Front-end course at Rolling Scopes school where I learn Git, CSS, HTML, JavaScript,
+          TypeScript</p>
+      </div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/DUL8Jsl9Xuo?si=18jAY9d2-hZRdN6J"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+  <section class="hard-skills" id="hard-skills">
+    <h2 class="section-heading">Hard skills</h2>
+    <div class="progress__card">
+      <p class="progress__label">Git</p>
+      <div class="progress__item">
+        <div class="progress__bar" style="width: 90%;">
+          <span class="progress__text">GitHub, different commands, git architecture, undo changes, ignore files</span>
+        </div>
+      </div>
+    </div>
+    <div class="progress__card">
+      <p class="progress__label">HTML</p>
+      <div class="progress__item">
+        <div class="progress__bar" style="width: 90%;">
+          <span class="progress__text">Semantics, Attributes, Images, Forms, Tables, Audio and Video, Dialog</span>
+        </div>
+      </div>
+    </div>
+    <div class="progress__card">
+      <p class="progress__label">CSS, SCSS</p>
+      <div class="progress__item">
+        <div class="progress__bar" style="width: 80%;">
+          <span class="progress__text">Selectors, Images, Positioning, Flex, Grid, Preprocessors, Modules, Responsive Design, Media</span>
+        </div>
+      </div>
+    </div>
+    <div class="progress__card">
+      <p class="progress__label">JavaScript</p>
+      <div class="progress__item">
+        <div class="progress__bar" style="width: 70%;">
+          <span class="progress__text">Core JS, DOM API, DOM Events, Canvas API, Modules, Classes, Prototypes, Event Loop, Animation</span>
+        </div>
+      </div>
+    </div>
+    <div class="progress__card">
+      <p class="progress__label">TypeScript</p>
+      <div class="progress__item">
+        <div class="progress__bar" style="width: 90%;">
+          <span class="progress__text">Everyday Types, Type Guards, Generics, Utility Types, Conditional Types</span>
+        </div>
+      </div>
+    </div>
+    <div class="progress__card">
+      <p class="progress__label">Bundlers</p>
+      <div class="progress__item">
+        <div class="progress__bar" style="width: 50%;">
+          <span class="progress__text">Webpack</span>
+        </div>
+      </div>
+    </div>
+    <div class="progress__card">
+      <p class="progress__label">Linters, Formatters, Husky</p>
+      <div class="progress__item">
+        <div class="progress__bar" style="width: 70%;">
+          <span class="progress__text">ESLint, Stylelint, Prettier, Husky</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="soft-skills" id="soft-skills">
+    <h2 class="section-heading">Soft Skills</h2>
   </section>
 </main>
 </body>
