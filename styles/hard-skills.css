@@ -36,15 +36,17 @@
 .progress__item {
   background-color: var(--progress-bar-color);
   overflow: hidden;
-  height: 50px;
+  min-height: 50px;
+  height: fit-content;
 }
 
 .progress__bar {
   background-color: var(--text-color);
-  height: 100%;
+  height: fit-content;
+  min-height: 50px;
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding: 5px 10px;
   color: var(--text-color--reverce);
   font-weight: 500;
   font-size: 0.85rem;
