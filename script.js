@@ -89,6 +89,28 @@ function resolveCollision(a, b) {
   a.dy = b.dy;
   b.dx = tempDx;
   b.dy = tempDy;
+
+  const dx = b.x - a.x;
+  const dy = b.y - a.y;
+  const distance = Math.sqrt(dx * dx + dy * dy);
+
+  const overlap = itemSize - distance;
+  if (overlap > 0) {
+    const halfOverlap = overlap / 2;
+    const offsetX = (dx / distance) * halfOverlap;
+    const offsetY = (dy / distance) * halfOverlap;
+
+    a.x -= offsetX;
+    a.y -= offsetY;
+    b.x += offsetX;
+    b.y += offsetY;
+
+    // Обновляем позиции DOM-элементов
+    a.el.style.left = `${a.x}px`;
+    a.el.style.top = `${a.y}px`;
+    b.el.style.left = `${b.x}px`;
+    b.el.style.top = `${b.y}px`;
+  }
 }
 
 function animateSoftSkills() {
