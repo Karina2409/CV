@@ -186,3 +186,19 @@ anchorLinks.forEach(link => {
     }
   });
 });
+
+const documentHeight = document.documentElement.clientHeight;
+const buttonTop = document.querySelector('.button-top');
+
+document.addEventListener('scroll', (e) => {
+  let pageYOffset = window.pageYOffset;
+  buttonTop.classList.add('invisible');
+  if (pageYOffset >= documentHeight - 100) {
+    buttonTop.classList.remove('invisible');
+  }
+});
+
+buttonTop.addEventListener('click', (e) => {
+  if (buttonTop.classList.contains('invisible')) return;
+  window.scrollTo(0, 0);
+})

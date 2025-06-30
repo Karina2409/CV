@@ -70,3 +70,27 @@ body {
 .section {
   width: 100%;
 }
+
+.button-top {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  background-color: var(--text-color);
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-top svg g {
+  stroke: var(--text-color--reverce);
+}
+
+.invisible {
+  display: none;
+}
