@@ -142,3 +142,47 @@ function animateSoftSkills() {
 
 animateSocial();
 animateSoftSkills();
+
+const burger = document.getElementById('burger');
+const nav = document.querySelector('.nav');
+const header = document.querySelector('.header');
+const body = document.body;
+const anchorLinks = document.querySelectorAll('.anchor-link');
+
+function toggleMenu() {
+  if (burger.classList.contains('active')) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
+}
+
+function openMenu() {
+  burger.classList.add('active');
+  nav.classList.add('open');
+  header.classList.add('menu-active');
+  body.classList.add('menu-open');
+}
+
+function closeMenu() {
+  burger.classList.remove('active');
+  nav.classList.remove('open');
+  header.classList.remove('menu-active');
+  body.classList.remove('menu-open');
+}
+
+burger.addEventListener('click', toggleMenu);
+
+header.addEventListener('click', (e) => {
+  if (!header.classList.contains('menu-active')) return;
+  if (nav.contains(e.target) || burger.contains(e.target)) return;
+  closeMenu();
+});
+
+anchorLinks.forEach(link => {
+  link.addEventListener('click', function(e) {
+    if (window.innerWidth <= 870) {
+      closeMenu();
+    }
+  });
+});
