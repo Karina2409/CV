@@ -52,3 +52,8 @@ function updateScoreElement() {
 * **University:** Belarusian State University of Informatics and Radioelectronics
 * **Courses:** JavaScript/Front-end 2024Q4 in RS School
 
+-----
+
+### English
+
+Pre-Intermediate
