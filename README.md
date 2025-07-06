@@ -1,6 +1,9 @@
 # Karina Serdyuk
+
 ### Junior Frontend Developer
+
 -----
+
 ### Contacts
 
 * **Location:** Minsk, Belarus
@@ -17,3 +20,19 @@ I am a fourth-year student at BSUIR majoring in information systems and technolo
 
 -----
 
+### Skills
+
+* Angular
+* TypeScript
+* JavaScript
+* HTML
+* CSS
+* Sass
+* Git/GitHub
+* Figma to developing
+* Jira
+* Java
+* SpringBoot
+* C++
+
+-----
