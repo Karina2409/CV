@@ -1,0 +1,96 @@
+:root {
+  --bg-color: antiquewhite;
+  --text-color: #1d216a;
+  --photo-before-color: #939cff;
+  --accent-color: #ffb834;
+  --social-color: rgba(196, 156, 255, 0.5);
+  --text-color--reverce: antiquewhite;
+  --progress-bar-color: lightgray;
+}
+
+[data-theme='dark'] {
+  --bg-color: #191300;
+  --text-color: antiquewhite;
+  --photo-before-color: #939cff;
+  --accent-color: #ffd17d;
+  --text-color--reverce: #1d216a;
+  --progress-bar-color: #808080;
+}
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, serif;
+  box-sizing: border-box;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main {
+  position: relative;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  max-width: 1200px;
+  width: 100%;
+  min-width: 0;
+  padding: 0 20px;
+}
+
+.section-heading {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  background-color: var(--text-color);
+  width: 100%;
+  max-width: 400px;
+  bottom: 0;
+}
+
+.section {
+  width: 100%;
+}
+
+.button-top {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  background-color: var(--text-color);
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-top svg g {
+  stroke: var(--text-color--reverce);
+}
+
+.invisible {
+  display: none;
+}
