@@ -36,3 +36,13 @@ I am a fourth-year student at BSUIR majoring in information systems and technolo
 * C++
 
 -----
+
+### Code Example
+
+```
+function updateScoreElement() {
+  document.querySelector('.js-score')
+    .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
+}
+```
+-----
