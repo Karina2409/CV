@@ -85,6 +85,16 @@
   box-shadow: 0 0 0 30px var(--social-color);
 }
 
+.linkedin-link {
+  top: 2rem;
+  left: 6rem;
+}
+
+.github-link {
+  top: 6rem;
+  right: 4rem;
+}
+
 .btn {
   position: relative;
   overflow: hidden;
