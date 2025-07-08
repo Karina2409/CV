@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Karina Serdyuk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Karina Serdyuk">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/hard-skills.css">
+  <link rel="stylesheet" href="styles/soft-skills.css">
+  <link rel="stylesheet" href="styles/projects.css">
+  <link rel="stylesheet" href="styles/education.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="localeStorageService.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="header">
+  <div>
+    <button onclick="changeTheme()" class="theme-button">
+      change
+    </button>
+  </div>
+
+  <div class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="nav">
+    <ul class="list">
+      <li class="list__item">
+        <a href="#hard-skills" class="anchor-link">Hard skills</a>
+      </li>
+      <li class="list__item">
+        <a href="#soft-skills" class="anchor-link">Soft skills</a>
+      </li>
+      <li class="list__item">
+        <a href="#projects" class="anchor-link">Projects</a>
+      </li>
+      <li class="list__item">
+        <a href="#education" class="anchor-link">Education</a>
+      </li>
+      <li class="list__item">
+        <a href="#english" class="anchor-link">English</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main class="main">
+  <button class="button-top invisible">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+      <g fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 10 L16 2 26 10 M16 2 L16 30"/>
+      </g>
+    </svg>
+  </button>
+  <section class="about-me section">
+    <div class="about-me__main">
+      <a class="about-me__social"
+         href="https://www.linkedin.com/in/karina-serdyuk-4a7722255/"
+         target="_blank"
+         style="top: 2rem; left: 6rem"
+      >
+        <img src="assets/icons/linkedin_icon.svg" alt="LinkedIn">
+      </a>
+      <a class="about-me__social"
+         href="https://github.com/Karina2409"
+         target="_blank"
+         style="top: 6rem; right: 4rem"
+      >
+        <img src="assets/icons/github-icon.svg" alt="GitHub">
+      </a>
+      <div class="about-me__photo-container">
+        <img src="./assets/images/my-photo.JPG" alt="Karina" class="about-me__photo">
+      </div>
+      <div class="about-me__name">
+        Karina Siardziuk
+      </div>
+      <div class="about-me__job">
+        Junior Front-End Developer
+      </div>
+      <div class="about-me__resume">
+        <a href="" class="btn btn__download">
+        <span>Download CV
+        <svg data-name="Livello 1" id="Livello_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" width="20px"
+             height="20px">
+          <title/>
+          <path class="download-svg"
+                d="M61.88,93.12h0a3,3,0,0,0,.44.36l.24.13a1.74,1.74,0,0,0,.59.24l.25.07h0a3,3,0,0,0,1.16,0l.26-.08.3-.09a3,3,0,0,0,.3-.16l.21-.12a3,3,0,0,0,.46-.38L93,66.21A3,3,0,1,0,88.79,62L67,83.76V3a3,3,0,0,0-6,0V83.76L39.21,62A3,3,0,0,0,35,66.21Z"/>
+          <path class="download-svg"
+                d="M125,88a3,3,0,0,0-3,3v22a9,9,0,0,1-9,9H15a9,9,0,0,1-9-9V91a3,3,0,0,0-6,0v22a15,15,0,0,0,15,15h98a15,15,0,0,0,15-15V91A3,3,0,0,0,125,88Z"/>
+        </svg>
+        </span>
+        </a>
+      </div>
+    </div>
+    <div class="about-me__info-container">
+      <div class="about-me__info">
+        <p>I'm a third-year student at the BSUIR at the faculty of computer aided design.</p>
+        <p>At the university we studied many programming languages such as: C++, Java, Python, Kotlin, a little CSS and
+          HTML.</p>
+        <p>I finished the JS / Front-end course at Rolling Scopes school where I learn Git, CSS, HTML, JavaScript,
+          TypeScript</p>
+      </div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/DUL8Jsl9Xuo?si=18jAY9d2-hZRdN6J"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+  <section class="hard-skills section" id="hard-skills">
+    <h2 class="section-heading">Hard skills</h2>
+
+    <div class="progress__card">
+      <div class="progress__label-container">
+        <?xml version="1.0" ?>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+             viewBox="0 0 24 24" xml:space="preserve" width="30" height="30">
+          <g>
+            <path
+              d="M21.656,0H2.344C1.05,0,0,1.05,0,2.344v19.312C0,22.95,1.05,24,2.344,24h19.312C22.95,24,24,22.95,24,21.656V2.344   C24,1.05,22.95,0,21.656,0z M13.922,13.316h-3.01v8.574H8.527v-8.574H5.531v-1.926h8.391V13.316z M21.698,20.37   c-0.467,0.835-1.325,1.305-2.238,1.5c-1.06,0.226-2.187,0.214-3.25,0.015c-0.521-0.098-0.972-0.244-1.353-0.44v-2.347   c0.426,0.357,0.888,0.625,1.387,0.803c0.499,0.179,1.003,0.268,1.511,0.268c0.45,0,0.951-0.056,1.339-0.304   c0.266-0.17,0.444-0.438,0.444-0.759c0-0.437-0.316-0.767-0.657-0.997c-0.499-0.336-1.072-0.555-1.625-0.785   c-0.822-0.342-1.434-0.76-1.838-1.254c-0.702-0.859-0.817-2.231-0.275-3.201c0.463-0.828,1.316-1.316,2.216-1.533   c0.981-0.236,2.046-0.236,3.041-0.081c0.423,0.066,0.813,0.167,1.17,0.304v2.193c-0.176-0.122-0.368-0.23-0.576-0.322   c-0.41-0.183-0.853-0.307-1.298-0.367c-0.445-0.06-0.914-0.07-1.353,0.033c-0.346,0.08-0.71,0.241-0.91,0.55   c-0.083,0.13-0.125,0.275-0.125,0.436c0,0.176,0.046,0.334,0.139,0.473c0.235,0.353,0.649,0.58,1.02,0.763   c0.652,0.32,1.336,0.56,1.962,0.931c0.608,0.359,1.148,0.859,1.412,1.525c0.127,0.32,0.191,0.693,0.191,1.118   C22.031,19.479,21.92,19.972,21.698,20.37z"/>
+          </g>
+        </svg>
+        <p class="progress__label">TypeScript</p>
+      </div>
+      <div class="progress__item">
+        <div class="progress__bar" style="width: 90%;">
+          <span class="progress__text">Everyday Types, Type Guards, Generics, Utility Types, Conditional Types</span>
+        </div>
+      </div>
+    </div>
+    <div class="progress__card">
+      <div class="progress__label-container">
+        <i class="fa-brands fa-square-js"></i>
+        <p class="progress__label">JavaScript</p>
+      </div>
+      <div class="progress__item">
+        <div class="progress__bar" style="width: 70%;">
+          <span class="progress__text">Core JS, DOM, Canvas API, Functional Programming, OOP, Asynchronous JavaScript, ES6+, Animation</span>
+        </div>
+      </div>
+    </div>
+    <div class="progress__card">
+      <div class="progress__label-container">
+        <i class="fa-brands fa-html5"></i>
+        <p class="progress__label">HTML</p>
+      </div>
+      <div class="progress__item">
+        <div class="progress__bar" style="width: 90%;">
+          <span class="progress__text">Semantics, Attributes, Forms, Audio and Video</span>
+        </div>
+      </div>
+    </div>
+    <div class="progress__card">
+      <div class="progress__label-container">
+        <i class="fa-brands fa-css3-alt"></i>
+        <p class="progress__label">CSS, SCSS</p>
+      </div>
+      <div class="progress__item">
+        <div class="progress__bar" style="width: 80%;">
+          <span class="progress__text">Selectors, Images, Positioning, Flex, Grid, Preprocessors, Modules, Responsive Design, BEM</span>
+        </div>
+      </div>
+    </div>
+    <div class="progress__card">
+      <div class="progress__label-container">
+        <i class="fa-brands fa-git-alt"></i>
+        <p class="progress__label">Git</p>
+      </div>
+      <div class="progress__item">
+        <div class="progress__bar" style="width: 90%;">
+          <span class="progress__text">GitHub, Different commands, Git architecture</span>
+        </div>
+      </div>
+    </div>
+    <div class="progress__card">
+      <div class="progress__label-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32">
+          <path
+            d="M28.021 24.161l-11.552 6.505v-5.068l7.198-3.943zM28.813 23.448v-13.609l-4.229 2.432v8.745zM3.901 24.161l11.552 6.505v-5.068l-7.198-3.943zM3.109 23.448v-13.609l4.229 2.432v8.745zM3.604 8.958l11.849-6.672v4.901l-7.646 4.188zM28.318 8.958l-11.849-6.672v4.901l7.646 4.188zM15.453 24.448l-7.099-3.891v-7.703l7.099 4.083zM16.469 24.448l7.099-3.891v-7.703l-7.099 4.083zM8.833 11.964l7.13-3.901 7.13 3.901-7.13 4.099z"/>
+        </svg>
+        <p class="progress__label">Bundlers</p>
+      </div>
+      <div class="progress__item">
+        <div class="progress__bar" style="width: 50%;">
+          <span class="progress__text">Webpack</span>
+        </div>
+      </div>
+    </div>
+    <div class="progress__card">
+      <div class="progress__label-container">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-eslint"
+             width="30" height="30" viewBox="0 0 24 24">
+          <path
+            d="M7.95,9.55L11.84,7.3C11.94,7.25 12.06,7.25 12.16,7.3L16.05,9.55C16.15,9.61 16.21,9.71 16.21,9.82V14.32C16.21,14.43 16.15,14.53 16.05,14.59L12.16,16.84C12.06,16.89 11.94,16.89 11.84,16.84L7.95,14.59C7.85,14.53 7.79,14.43 7.79,14.32V9.82C7.79,9.71 7.85,9.61 7.95,9.55M22.12,11.6C22.29,11.89 22.29,12.23 22.12,12.53L17.47,20.56C17.3,20.86 17,21 16.65,21H7.35C7,21 6.7,20.85 6.53,20.56L1.88,12.53C1.71,12.24 1.71,11.87 1.88,11.58L6.53,3.5C6.7,3.22 7,3 7.35,3H16.65C17,3 17.3,3.22 17.47,3.5L22.12,11.6M18.27,15.5V8.65C18.27,8.53 18.2,8.42 18.09,8.36L12.16,4.95C12.06,4.89 11.93,4.89 11.83,4.95L5.91,8.36C5.8,8.42 5.73,8.53 5.73,8.65V15.5C5.73,15.61 5.8,15.72 5.91,15.78L11.84,19.19C11.94,19.25 12.07,19.25 12.17,19.19L18.09,15.78C18.2,15.72 18.27,15.61 18.27,15.5Z"/>
+        </svg>
+        <p class="progress__label">Linters, Formatters, Husky</p>
+      </div>
+      <div class="progress__item">
+        <div class="progress__bar" style="width: 70%;">
+          <span class="progress__text">ESLint, Stylelint, Prettier, Husky</span>
+        </div>
+      </div>
+    </div>
+    <div class="progress__card">
+      <div class="progress__label-container">
+        <i class="fa-brands fa-jira"></i>
+        <p class="progress__label">Jira</p>
+      </div>
+      <div class="progress__item">
+        <div class="progress__bar" style="width: 60%;">
+          <span class="progress__text">Creating a project task board using a project management tool</span>
+        </div>
+      </div>
+    </div>
+    <div class="progress__card">
+      <div class="progress__label-container">
+        <i class="fa-brands fa-figma"></i>
+        <p class="progress__label">Figma</p>
+      </div>
+      <div class="progress__item">
+        <div class="progress__bar" style="width: 90%;">
+          <span class="progress__text">Figma for web development</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="soft-skills section" id="soft-skills">
+    <h2 class="section-heading">Soft Skills</h2>
+    <div class="soft-skills__container">
+      <div class="soft-skills__item">
+        <span>Responsible</span>
+      </div>
+      <div class="soft-skills__item">
+        <span>Attentive</span>
+      </div>
+      <div class="soft-skills__item">
+        <span>Trainable</span>
+      </div>
+      <div class="soft-skills__item">
+        <span>Punctual</span>
+      </div>
+      <div class="soft-skills__item">
+        <span>Motivated</span>
+      </div>
+      <div class="soft-skills__item">
+        <span>Friendly</span>
+      </div>
+    </div>
+  </section>
+  <section class="projects section" id="projects">
+    <h2 class="section-heading">Projects</h2>
+    <article class="projects__card">
+      <a
+        href="https://karina2409-e-commerce-app.netlify.app/"
+        target="_blank"
+        class="projects__link"
+      >
+        <img src="./assets/images/e-commerce-app.png" alt="Devisees" class="projects__image">
+        <div class="projects__about">
+          <div class="projects__title">eCommerce App Devisees</div>
+          <ul class="projects__technologies">
+            <li class="projects__technology angular">Angular</li>
+            <li class="projects__technology scss">SCSS</li>
+            <li class="projects__technology commercetools">CommerceTool</li>
+            <li class="projects__technology husky">Husky</li>
+            <li class="projects__technology prettier">Prettier</li>
+            <li class="projects__technology eslint">ESLint</li>
+            <li class="projects__technology spa">SPA</li>
+            <li class="projects__technology adaptive">Adaptive</li>
+          </ul>
+          <p class="projects__text">
+            This project was developed by a team. I was able to take on the role of team lead. The project is an online
+            electronics store. Implemented pages include: Login, Registration, Main, Catalog, Detailed Product, User
+            Profile, Basket, About Us.
+          </p>
+        </div>
+      </a>
+    </article>
+    <article class="projects__card">
+      <a
+        href="https://karina2409.github.io/decision-making-tool/"
+        target="_blank"
+        class="projects__link"
+      >
+        <img src="./assets/images/decision-making-tool.png" alt="Decision Making Tool" class="projects__image">
+        <div class="projects__about">
+          <div class="projects__title">Decision Making Tool</div>
+          <ul class="projects__technologies">
+            <li class="projects__technology typescript">TypeScript</li>
+            <li class="projects__technology css">CSS</li>
+            <li class="projects__technology husky">Husky</li>
+            <li class="projects__technology prettier">Prettier</li>
+            <li class="projects__technology eslint">ESLint</li>
+            <li class="projects__technology stylelint">StyleLint</li>
+            <li class="projects__technology spa">SPA</li>
+            <li class="projects__technology adaptive">Adaptive</li>
+          </ul>
+          <p class="projects__text">
+            This application is designed to help streamers, content makers, tabletop role-players to make random pick
+            based on the weight of an option.
+
+            The application consists of two parts: List of Options and Decision Picker.
+          </p>
+        </div>
+      </a>
+    </article>
+    <article class="projects__card">
+      <a
+        href="https://karina2409.github.io/nonograms/"
+        target="_blank"
+        class="projects__link"
+      >
+        <img src="./assets/images/nonograms.png" alt="Nonograms" class="projects__image">
+        <div class="projects__about">
+          <div class="projects__title">Nonograms</div>
+          <ul class="projects__technologies">
+            <li class="projects__technology javascript">JavaScript</li>
+            <li class="projects__technology css">CSS</li>
+            <li class="projects__technology canvas">Canvas</li>
+            <li class="projects__technology adaptive">Adaptive</li>
+          </ul>
+          <p class="projects__text">
+            Nonograms is a puzzle game to reveal a hidden picture by looking at the number clues. The clues are given at
+            the top and left side of the grid. Each number in these clue defines a block of black cell. A number
+            indicates an unbroken line of black cells, and they are in the same order as the lines.
+          </p>
+        </div>
+      </a>
+    </article>
+    <article class="projects__card">
+      <a
+        href="https://karina2409.github.io/simon-says/"
+        target="_blank"
+        class="projects__link"
+      >
+        <img src="./assets/images/simon-says.png" alt="Simon Says" class="projects__image">
+        <div class="projects__about">
+          <div class="projects__title">Simon Says</div>
+          <ul class="projects__technologies">
+            <li class="projects__technology javascript">JavaScript</li>
+            <li class="projects__technology css">CSS</li>
+            <li class="projects__technology adaptive">Adaptive</li>
+          </ul>
+          <p class="projects__text">
+            This game is a variant of the classical Simon Says game, where players must remember and reproduce sequences
+            of keyboard symbols. In this task, ‘symbols’ refer only to letters and numbers. The game consists of 5
+            rounds and 3 levels of difficulty. In each round, the user must repeat a sequence of keyboard symbols based
+            on the level of difficulty.
+          </p>
+        </div>
+      </a>
+    </article>
+    <article class="projects__card">
+      <a
+        href="https://karina2409.github.io/christmas-shop/"
+        target="_blank"
+        class="projects__link"
+      >
+        <img src="./assets/images/christmas-shop.png" alt="Christmas Shop" class="projects__image">
+        <div class="projects__about">
+          <div class="projects__title">Christmas Shop</div>
+          <ul class="projects__technologies">
+            <li class="projects__technology html">HTML</li>
+            <li class="projects__technology css">CSS</li>
+            <li class="projects__technology adaptive">Adaptive</li>
+            <li class="projects__technology slider">Slider</li>
+          </ul>
+          <p class="projects__text">
+            Christmas holidays are just around the corner! It's time to shop for gifts... but where?
+            Christmas Shop is a project where you will need to create a website consisting of two pages, make it
+            responsive, and add interactivity.
+            It's time to create a cozy place for buying interesting gifts!
+          </p>
+        </div>
+      </a>
+    </article>
+  </section>
+  <section class="education section" id="education">
+    <h2 class="section-heading">Education</h2>
+  </section>
+  <section class="english section" id="english">
+    <h2 class="section-heading">English</h2>
+  </section>
+</main>
+</body>
+</html>
