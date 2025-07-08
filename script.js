@@ -201,4 +201,15 @@ document.addEventListener('scroll', (e) => {
 buttonTop.addEventListener('click', (e) => {
   if (buttonTop.classList.contains('invisible')) return;
   window.scrollTo(0, 0);
-})
+});
+
+function generateLightColorRGB() {
+  const r = Math.floor(Math.random() * 128) + 128;
+  const g = Math.floor(Math.random() * 128) + 128;
+  const b = Math.floor(Math.random() * 128) + 128;
+  return `rgb(${r}, ${g}, ${b})`;
+}
+
+document.querySelectorAll('.projects__technology').forEach(item => {
+  item.style.backgroundColor = generateLightColorRGB();
+});

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="styles/about.css">
   <link rel="stylesheet" href="styles/hard-skills.css">
   <link rel="stylesheet" href="styles/soft-skills.css">
+  <link rel="stylesheet" href="styles/projects.css">
   <link rel="stylesheet" href="styles/education.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <script src="localeStorageService.js" defer></script>
@@ -57,7 +58,7 @@
   <button class="button-top invisible">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
       <g fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M6 10 L16 2 26 10 M16 2 L16 30" />
+        <path d="M6 10 L16 2 26 10 M16 2 L16 30"/>
       </g>
     </svg>
   </button>
@@ -68,14 +69,14 @@
          target="_blank"
          style="top: 2rem; left: 6rem"
       >
-        <img src="./assets/svg/linkedin_icon.svg" alt="LinkedIn">
+        <img src="assets/icons/linkedin_icon.svg" alt="LinkedIn">
       </a>
       <a class="about-me__social"
          href="https://github.com/Karina2409"
          target="_blank"
          style="top: 6rem; right: 4rem"
       >
-        <img src="./assets/svg/github-icon.svg" alt="GitHub">
+        <img src="assets/icons/github-icon.svg" alt="GitHub">
       </a>
       <div class="about-me__photo-container">
         <img src="./assets/images/my-photo.JPG" alt="Karina" class="about-me__photo">
@@ -121,17 +122,6 @@
 
     <div class="progress__card">
       <div class="progress__label-container">
-        <i class="fa-brands fa-square-js"></i>
-        <p class="progress__label">JavaScript</p>
-      </div>
-      <div class="progress__item">
-        <div class="progress__bar" style="width: 70%;">
-          <span class="progress__text">Core JS, DOM, Canvas API, Functional Programming, OOP, Asynchronous JavaScript, ES6+, Animation</span>
-        </div>
-      </div>
-    </div>
-    <div class="progress__card">
-      <div class="progress__label-container">
         <?xml version="1.0" ?>
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
              viewBox="0 0 24 24" xml:space="preserve" width="30" height="30">
@@ -145,6 +135,17 @@
       <div class="progress__item">
         <div class="progress__bar" style="width: 90%;">
           <span class="progress__text">Everyday Types, Type Guards, Generics, Utility Types, Conditional Types</span>
+        </div>
+      </div>
+    </div>
+    <div class="progress__card">
+      <div class="progress__label-container">
+        <i class="fa-brands fa-square-js"></i>
+        <p class="progress__label">JavaScript</p>
+      </div>
+      <div class="progress__item">
+        <div class="progress__bar" style="width: 70%;">
+          <span class="progress__text">Core JS, DOM, Canvas API, Functional Programming, OOP, Asynchronous JavaScript, ES6+, Animation</span>
         </div>
       </div>
     </div>
@@ -258,7 +259,131 @@
   </section>
   <section class="projects section" id="projects">
     <h2 class="section-heading">Projects</h2>
+    <article class="projects__card">
+      <a
+        href="https://karina2409-e-commerce-app.netlify.app/"
+        target="_blank"
+        class="projects__link"
+      >
+        <img src="./assets/images/e-commerce-app.png" alt="Devisees" class="projects__image">
+        <div class="projects__about">
+          <div class="projects__title">eCommerce App Devisees</div>
+          <ul class="projects__technologies">
+            <li class="projects__technology angular">Angular</li>
+            <li class="projects__technology scss">SCSS</li>
+            <li class="projects__technology commercetools">CommerceTool</li>
+            <li class="projects__technology husky">Husky</li>
+            <li class="projects__technology prettier">Prettier</li>
+            <li class="projects__technology eslint">ESLint</li>
+            <li class="projects__technology spa">SPA</li>
+            <li class="projects__technology adaptive">Adaptive</li>
+          </ul>
+          <p class="projects__text">
+            This project was developed by a team. I was able to take on the role of team lead. The project is an online
+            electronics store. Implemented pages include: Login, Registration, Main, Catalog, Detailed Product, User
+            Profile, Basket, About Us.
+          </p>
+        </div>
+      </a>
+    </article>
+    <article class="projects__card">
+      <a
+        href="https://karina2409.github.io/decision-making-tool/"
+        target="_blank"
+        class="projects__link"
+      >
+        <img src="./assets/images/decision-making-tool.png" alt="Decision Making Tool" class="projects__image">
+        <div class="projects__about">
+          <div class="projects__title">Decision Making Tool</div>
+          <ul class="projects__technologies">
+            <li class="projects__technology typescript">TypeScript</li>
+            <li class="projects__technology css">CSS</li>
+            <li class="projects__technology husky">Husky</li>
+            <li class="projects__technology prettier">Prettier</li>
+            <li class="projects__technology eslint">ESLint</li>
+            <li class="projects__technology stylelint">StyleLint</li>
+            <li class="projects__technology spa">SPA</li>
+            <li class="projects__technology adaptive">Adaptive</li>
+          </ul>
+          <p class="projects__text">
+            This application is designed to help streamers, content makers, tabletop role-players to make random pick
+            based on the weight of an option.
 
+            The application consists of two parts: List of Options and Decision Picker.
+          </p>
+        </div>
+      </a>
+    </article>
+    <article class="projects__card">
+      <a
+        href="https://karina2409.github.io/nonograms/"
+        target="_blank"
+        class="projects__link"
+      >
+        <img src="./assets/images/nonograms.png" alt="Nonograms" class="projects__image">
+        <div class="projects__about">
+          <div class="projects__title">Nonograms</div>
+          <ul class="projects__technologies">
+            <li class="projects__technology javascript">JavaScript</li>
+            <li class="projects__technology css">CSS</li>
+            <li class="projects__technology canvas">Canvas</li>
+            <li class="projects__technology adaptive">Adaptive</li>
+          </ul>
+          <p class="projects__text">
+            Nonograms is a puzzle game to reveal a hidden picture by looking at the number clues. The clues are given at
+            the top and left side of the grid. Each number in these clue defines a block of black cell. A number
+            indicates an unbroken line of black cells, and they are in the same order as the lines.
+          </p>
+        </div>
+      </a>
+    </article>
+    <article class="projects__card">
+      <a
+        href="https://karina2409.github.io/simon-says/"
+        target="_blank"
+        class="projects__link"
+      >
+        <img src="./assets/images/simon-says.png" alt="Simon Says" class="projects__image">
+        <div class="projects__about">
+          <div class="projects__title">Simon Says</div>
+          <ul class="projects__technologies">
+            <li class="projects__technology javascript">JavaScript</li>
+            <li class="projects__technology css">CSS</li>
+            <li class="projects__technology adaptive">Adaptive</li>
+          </ul>
+          <p class="projects__text">
+            This game is a variant of the classical Simon Says game, where players must remember and reproduce sequences
+            of keyboard symbols. In this task, ‘symbols’ refer only to letters and numbers. The game consists of 5
+            rounds and 3 levels of difficulty. In each round, the user must repeat a sequence of keyboard symbols based
+            on the level of difficulty.
+          </p>
+        </div>
+      </a>
+    </article>
+    <article class="projects__card">
+      <a
+        href="https://karina2409.github.io/christmas-shop/"
+        target="_blank"
+        class="projects__link"
+      >
+        <img src="./assets/images/christmas-shop.png" alt="Christmas Shop" class="projects__image">
+        <div class="projects__about">
+          <div class="projects__title">Christmas Shop</div>
+          <ul class="projects__technologies">
+            <li class="projects__technology html">HTML</li>
+            <li class="projects__technology css">CSS</li>
+            <li class="projects__technology adaptive">Adaptive</li>
+            <li class="projects__technology slider">Slider</li>
+          </ul>
+          <p class="projects__text">
+            Christmas holidays are just around the corner! It's time to shop for gifts... but where?
+            Christmas Shop is a project where you will need to create a website consisting of two pages, make it
+            responsive, and add interactivity.
+            It's time to create a cozy place for buying interesting gifts!
+          </p>
+        </div>
+      </a>
+    </article>
   </section>
   <section class="education section" id="education">
     <h2 class="section-heading">Education</h2>
