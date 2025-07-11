@@ -71,3 +71,7 @@
   font-weight: 500;
   font-size: 1.4rem;
 }
+
+.education__certificate:visited {
+  color: var(--text-color);
+}
