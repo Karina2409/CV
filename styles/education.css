@@ -65,3 +65,9 @@
 .education__specialty {
   font-weight: 400;
 }
+
+.education__certificate {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 1.4rem;
+}
