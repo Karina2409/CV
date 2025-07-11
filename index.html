@@ -5,6 +5,7 @@
   <title>Karina Serdyuk</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Karina Serdyuk">
+  <link rel="icon" href="./assets/icons/icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
@@ -16,6 +17,9 @@
   <link rel="stylesheet" href="styles/soft-skills.css">
   <link rel="stylesheet" href="styles/projects.css">
   <link rel="stylesheet" href="styles/education.css">
+  <link rel="stylesheet" href="styles/education.css">
+  <link rel="stylesheet" href="styles/languages.css">
+  <link rel="stylesheet" href="styles/footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <script src="localeStorageService.js" defer></script>
   <script src="script.js" defer></script>
@@ -49,7 +53,7 @@
         <a href="#education" class="anchor-link">Education</a>
       </li>
       <li class="list__item">
-        <a href="#english" class="anchor-link">English</a>
+        <a href="#languages" class="anchor-link">Languages</a>
       </li>
     </ul>
   </nav>
@@ -86,7 +90,7 @@
         Junior Front-End Developer
       </div>
       <div class="about-me__resume">
-        <a href="" class="btn btn__download">
+        <a href="./assets/cv.pdf" class="btn btn__download" download>
           <span>Download CV</span>
           <svg data-name="Livello 1" id="Livello_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"
                width="20px"
@@ -102,7 +106,7 @@
     </div>
     <div class="about-me__info-container">
       <div class="about-me__info">
-        <p>I'm a third-year student at the BSUIR at the faculty of computer aided design.</p>
+        <p>I'm a fourth-year student at the BSUIR at the faculty of computer aided design.</p>
         <p>At the university we studied many programming languages such as: C++, Java, Python, Kotlin, a little CSS and
           HTML.</p>
         <p>I finished the JS / Front-end course at Rolling Scopes school where I learn Git, CSS, HTML, JavaScript,
@@ -419,9 +423,23 @@
       </article>
     </div>
   </section>
-  <section class="english section" id="english">
-    <h2 class="section-heading">English</h2>
+  <section class="languages section" id="languages">
+    <h2 class="section-heading">Languages</h2>
+    <article class="languages__lang">
+      <h3 class="languages__title">English</h3>
+      <p class="languages__level">B2</p>
+      <a href="https://cert.efset.org/en/yjosFX" target="_blank" class="languages__certificate">Certificate</a>
+    </article>
   </section>
 </main>
+<footer class="footer">
+  <div>© 2025 by Karina Siardziuk</div>
+  <a href="https://github.com/Karina2409" target="_blank">
+    <img src="./assets/icons/github-icon.svg" alt="Github">
+  </a>
+  <a href="https://rs.school/" target="_blank">
+    <img src="./assets/icons/rsschool.png" alt="RS School" class="rsschool-logo">
+  </a>
+</footer>
 </body>
 </html>

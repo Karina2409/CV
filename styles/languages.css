@@ -1,0 +1,11 @@
+.languages__lang {
+  display: flex;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  gap: 3rem;
+  padding-bottom: 40px;
+}
+
+.languages__certificate:visited {
+  color: var(--text-color);
+}
