@@ -1,3 +1,66 @@
 .education {
   width: 100%;
 }
+
+.education__item-container {
+  border-left: 2px solid var(--progress-bar-color);
+  padding: 1rem 0;
+}
+
+.education__item {
+  position: relative;
+  border-radius: 5px;
+  margin-left: 30px;
+  border-left: 2px solid var(--accent-color);
+  margin-bottom: 1rem;
+  box-shadow: 0 0.125rem 0.25rem var(--progress-bar-color);
+}
+
+.education__item::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid var(--accent-color);
+  left: -40px;
+  top: 40px;
+  z-index: 1;
+}
+
+.education__item::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: var(--accent-color);
+  top: 46px;
+  left: -30px;
+}
+
+.education__card {
+  border: 1px var(--progress-bar-color) solid;
+  border-left: none;
+  border-radius: 5px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+
+.education__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.education__time-interval {
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+}
+
+.education__specialty {
+  font-weight: 400;
+}
