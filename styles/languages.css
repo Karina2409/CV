@@ -6,6 +6,7 @@
   padding-bottom: 40px;
 }
 
-.languages__certificate:visited {
+.languages__certificate:visited,
+.languages__certificate {
   color: var(--text-color);
 }
