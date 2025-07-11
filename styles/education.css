@@ -1,9 +1,10 @@
 .education {
   width: 100%;
+  color: var(--text-color);
 }
 
 .education__item-container {
-  border-left: 2px solid var(--progress-bar-color);
+  border-left: 3px solid var(--progress-bar-color);
   padding: 1rem 0;
 }
 
@@ -11,7 +12,7 @@
   position: relative;
   border-radius: 5px;
   margin-left: 30px;
-  border-left: 2px solid var(--accent-color);
+  border-left: 3px solid var(--accent-color);
   margin-bottom: 1rem;
   box-shadow: 0 0.125rem 0.25rem var(--progress-bar-color);
 }
@@ -19,12 +20,12 @@
 .education__item::before {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: #fff;
-  border: 2px solid var(--accent-color);
-  left: -40px;
+  border: 3px solid var(--accent-color);
+  left: -42px;
   top: 40px;
   z-index: 1;
 }
@@ -33,9 +34,9 @@
   content: "";
   position: absolute;
   width: 30px;
-  height: 2px;
+  height: 3px;
   background-color: var(--accent-color);
-  top: 46px;
+  top: 48px;
   left: -30px;
 }
 
