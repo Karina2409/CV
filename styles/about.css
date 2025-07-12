@@ -68,6 +68,12 @@
   text-align: center;
 }
 
+.about-me__resume {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
 .about-me__social {
   position: absolute;
   box-shadow: 0 0 0 5px var(--social-color);
@@ -111,6 +117,11 @@
   color: var(--text-color);
   display: flex;
   gap: 5px;
+}
+
+.btn__contact {
+  background-color: var(--text-color);
+  color: var(--text-color--reverce);
 }
 
 .btn__download span {

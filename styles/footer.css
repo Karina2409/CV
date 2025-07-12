@@ -14,5 +14,4 @@
   height: 40px;
   border-radius: 50%;
   border: 2px solid var(--text-color);
-  transition: border 0.3s ease;
 }
