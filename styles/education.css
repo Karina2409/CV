@@ -3,6 +3,12 @@
   color: var(--text-color);
 }
 
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .education__item-container {
   border-left: 3px solid var(--progress-bar-color);
   padding: 1rem 0;
@@ -74,4 +80,38 @@
 
 .education__certificate:visited {
   color: var(--text-color);
+}
+
+@media screen and (max-width: 700px) {
+  .education__item-container {
+    border-left: none;
+    padding: 0;
+  }
+
+  .education__item {
+    border-left: none;
+    margin: 0;
+  }
+
+  .education__item::before {
+    content: '';
+    background: none;
+    border: none;
+  }
+
+  .education__item::after {
+    content: '';
+    background: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .education__card {
+    font-size: 1rem;
+  }
+
+  .education__title {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
 }

@@ -7,6 +7,8 @@
   color: var(--text-color);
   font-size: 1.5rem;
   font-weight: 500;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .rsschool-logo {
