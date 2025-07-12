@@ -1,12 +1,14 @@
 .footer {
   max-width: 1200px;
   width: 100%;
-  padding: 40px 20px;
+  padding: 40px 20px 60px 20px;
   display: flex;
   justify-content: space-between;
   color: var(--text-color);
   font-size: 1.5rem;
   font-weight: 500;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .rsschool-logo {
@@ -14,5 +16,4 @@
   height: 40px;
   border-radius: 50%;
   border: 2px solid var(--text-color);
-  transition: border 0.3s ease;
 }

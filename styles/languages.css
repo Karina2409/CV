@@ -4,6 +4,10 @@
   color: var(--text-color);
   gap: 3rem;
   padding-bottom: 40px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 1.2rem;
+  }
 }
 
 .languages__certificate:visited,
